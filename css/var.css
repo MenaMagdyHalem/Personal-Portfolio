@@ -1,0 +1,45 @@
+:root {
+    --main-color: #000;
+    --sec-color: #fff;
+    --overlay-color: rgba(0, 0, 0, .5);
+    --overlay-work: rgba(0, 0, 0, 0.38);
+    --py-3: 2rem;
+    --padding-section: 100px;
+}
+
+/* main style */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.py-3 {
+    padding-top: var(--py-3);
+    padding-bottom: var(--py-3);
+}
+
+.padding-section {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
